@@ -1,5 +1,127 @@
-@import '-var';
+@import '_var';
+
+@font-face {
+  font-family: 'Poppins', sans-serif !important;
+  src:
+    url(./font/my-font.woff2) format("woff2"),
+    url(./font/my-font.woff) format("woff");
+}
 
 body {
-    background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 10px solid #000;
+  height: 93vh;
+  background: linear-gradient(1380deg, #8cc6405a, #8cc640d4);
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: $app-wdith;
+}
+
+.app-Name {
+  font-weight: $font-weight - 100;
+  font-size: $font-size - 7;
+  text-align: center;
+  padding: 0;
+  font-family: $font-family;
+  cursor: none;
+}
+
+.value {
+  height: $value-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size - 3;
+  text-align: center;
+  padding: 0;
+  background: linear-gradient(1380deg, #e93d3a41, #e93e3a);
+  border-radius: 10px;
+  font-family: $font-family;
+  font-weight: $font-weight - 500;
+  cursor: none;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: space-around;
+  // padding: 5vh 0;
+
+  .buttons {
+    width: $button-width;
+    background-color: inherit;
+    border: 0;
+
+    #add-button-image,
+    #minus-button-image {
+      width: $button-image-width;
+      background-color: inherit;
+    }
+
+    #reset-button-image {
+      width: $button-image-width - 8;
+      background-color: inherit;
+    }
+  }
+
+  .button-images:hover {
+    // apply box shadow on
+    transform: scale(1.05);
+  }
+
+  .button-images:active {
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 760px) {
+  body {
+    padding: 0;
+    height: fit-content;
+  }
+
+  #app {
+    padding: 0 200px;
+    // background-color: red;
+    width: inherit;
+    height: fit-content;
+  }
+
+  .app-Name {
+    // display: none;
+    font-size: $font-size - 7.5;
+    font-weight: $font-weight - 400;
+    font-style: $font-style;
+  }
+
+  .value {
+    // display: none;
+    font-size: $font-size;
+  }
+
+  .buttons-div {
+    .buttons {
+      #add-button-image,
+      #minus-button-image {
+        width: $button-image-width / 2;
+        background-color: inherit;
+      }
+
+      #reset-button-image {
+        width: $button-image-width - 10;
+        background-color: inherit;
+      }
+    }
+  }
 }
