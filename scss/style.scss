@@ -7,13 +7,18 @@
     url(./font/my-font.woff) format("woff");
 }
 
+.font {
+  font-family: $font-family;
+  font-style: $font-style;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px 12px;
   border: 10px solid #000;
-  height: 93vh;
+  min-height: 93vh;
   background: linear-gradient(1380deg, #8cc6405a, #8cc640d4);
 }
 
@@ -25,7 +30,7 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: $app-wdith;
+  max-width: $app-wdith;
 }
 
 .app-Name {
@@ -33,12 +38,11 @@ button {
   font-size: $font-size - 7;
   text-align: center;
   padding: 0;
-  font-family: $font-family;
   cursor: none;
 }
 
 .value {
-  height: $value-height;
+  min-height: $value-height;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +52,6 @@ button {
   padding: 0;
   background: linear-gradient(1380deg, #e93d3a41, #e93e3a);
   border-radius: 10px;
-  font-family: $font-family;
   font-weight: $font-weight - 500;
   cursor: none;
 }
@@ -56,27 +59,25 @@ button {
 .buttons-div {
   display: flex;
   justify-content: space-around;
-  // padding: 5vh 0;
 
   .buttons {
-    width: $button-width;
+    max-width: $button-width;
     background-color: inherit;
     border: 0;
 
     #add-button-image,
     #minus-button-image {
-      width: $button-image-width;
+      max-width: $button-image-width;
       background-color: inherit;
     }
 
     #reset-button-image {
-      width: $button-image-width - 8;
+      max-width: $button-image-width - 8;
       background-color: inherit;
     }
   }
 
   .button-images:hover {
-    // apply box shadow on
     transform: scale(1.05);
   }
 
@@ -85,28 +86,24 @@ button {
   }
 }
 
-@media (min-width: 760px) {
+@media screen and (min-width: 768px) {
   body {
     padding: 0;
-    height: fit-content;
+    min-height: fit-content;
   }
 
   #app {
     padding: 0 200px;
-    // background-color: red;
     width: inherit;
     height: fit-content;
   }
 
   .app-Name {
-    // display: none;
     font-size: $font-size - 7.5;
     font-weight: $font-weight - 400;
-    font-style: $font-style;
   }
 
   .value {
-    // display: none;
     font-size: $font-size;
   }
 
@@ -114,12 +111,12 @@ button {
     .buttons {
       #add-button-image,
       #minus-button-image {
-        width: $button-image-width / 2;
+        max-width: $button-image-width / 2;
         background-color: inherit;
       }
 
       #reset-button-image {
-        width: $button-image-width - 10;
+        max-width: $button-image-width - 10;
         background-color: inherit;
       }
     }
