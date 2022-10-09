@@ -1,10 +1,9 @@
 {
   "name": "counter-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Keeps count of the number of times the button is clicked",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -12,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/Haywayaheadshot/counter-app.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Counter", "App"],
+  "author": "Abubakar Ummar <haywayaheadshotstrategy.fx@gmail.com> (https://www.linkedin.com/in/abubakar-ummar-4b6643245/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Haywayaheadshot/counter-app/issues"
