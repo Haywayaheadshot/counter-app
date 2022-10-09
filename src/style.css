@@ -2,6 +2,7 @@
   font-family: "Poppins", sans-serif !important;
   src: url(./font/my-font.woff2) format("woff2"), url(./font/my-font.woff) format("woff");
 }
+
 .font {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
@@ -13,11 +14,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 10px 12px;
   border: 10px solid #000;
   min-height: 93vh;
@@ -33,12 +34,12 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 100%;
 }
 
@@ -57,14 +58,14 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 7rem;
   text-align: center;
   padding: 0;
@@ -79,29 +80,34 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
+
 .buttons-div .buttons {
   max-width: 30vw;
   background-color: inherit;
   border: 0;
 }
+
 .buttons-div .buttons #add-button-image,
 .buttons-div .buttons #minus-button-image {
   max-width: 20vw;
   background-color: inherit;
 }
+
 .buttons-div .buttons #reset-button-image {
   max-width: 12vw;
   background-color: inherit;
 }
+
 .buttons-div .button-images:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 .buttons-div .button-images:active {
   -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -111,6 +117,7 @@ button {
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
+
   #app {
     padding: 0 200px;
     width: inherit;
@@ -118,18 +125,22 @@ button {
     height: -moz-fit-content;
     height: fit-content;
   }
+
   .app-Name {
     font-size: 2.5rem;
     font-weight: 500;
   }
+
   .value {
     font-size: 10rem;
   }
+
   .buttons-div .buttons #add-button-image,
-.buttons-div .buttons #minus-button-image {
+  .buttons-div .buttons #minus-button-image {
     max-width: 10vw;
     background-color: inherit;
   }
+
   .buttons-div .buttons #reset-button-image {
     max-width: 10vw;
     background-color: inherit;
