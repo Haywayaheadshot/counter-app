@@ -1,3 +1,146 @@
+@font-face {
+  font-family: "Poppins", sans-serif !important;
+  src: url(./font/my-font.woff2) format("woff2"), url(./font/my-font.woff) format("woff");
+}
+
 body {
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 10px solid #000;
+  height: 93vh;
+  background: linear-gradient(1380deg, rgba(140, 198, 64, 0.3529411765), rgba(140, 198, 64, 0.831372549));
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-Name {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+  cursor: none;
+}
+
+.value {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 7rem;
+  text-align: center;
+  padding: 0;
+  background: linear-gradient(1380deg, rgba(233, 61, 58, 0.2549019608), #e93e3a);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  cursor: none;
+}
+
+.buttons-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.buttons-div .buttons {
+  width: 30vw;
+  background-color: inherit;
+  border: 0;
+}
+
+.buttons-div .buttons #add-button-image,
+.buttons-div .buttons #minus-button-image {
+  width: 20vw;
+  background-color: inherit;
+}
+
+.buttons-div .buttons #reset-button-image {
+  width: 12vw;
+  background-color: inherit;
+}
+
+.buttons-div .button-images:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buttons-div .button-images:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@media (min-width: 760px) {
+  body {
+    padding: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  #app {
+    padding: 0 200px;
+    width: inherit;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .app-Name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .value {
+    font-size: 10rem;
+  }
+
+  .buttons-div .buttons #add-button-image,
+  .buttons-div .buttons #minus-button-image {
+    width: 10vw;
+    background-color: inherit;
+  }
+
+  .buttons-div .buttons #reset-button-image {
+    width: 10vw;
+    background-color: inherit;
+  }
 }
