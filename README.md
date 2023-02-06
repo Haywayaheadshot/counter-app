@@ -26,8 +26,11 @@ To get a local copy up and running follow these simple example steps.
 
 To see live demo, click [here](https://haywayaheadshot.github.io/counter-app/)
 
-### Setup
+### Setup and Installation
 - To clone the repository run this command - " git clone https://github.com/Haywayaheadshot/counter-app.git "
+- cd counter-app
+- npm i
+- npm start
 
 ## Author
 
